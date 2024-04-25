@@ -43,7 +43,7 @@
 }
 
 ::placeholder {
-  color: #858585;
+  color: #293df3;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -61,7 +61,7 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  border: 1px solid #616691;
+  border: 1px solid #293df3;
   background-color: transparent;
   border-radius: 10px;
   margin: 24px auto;
@@ -69,6 +69,6 @@
 }
 
 .btn:hover {
-  background-color: #8590c0;
-  color: #e3d0e0;
+  background-color: #293df3;
+  color: #87d0f1;
 }

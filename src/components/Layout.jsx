@@ -1,16 +1,20 @@
-import { Navigation } from "../components/Navigation/Navigation";
-import { UserMenu } from "../components/UserMenu/UserMenu";
-import { AuthNav } from "../components/AuthNav/AuthNav";
-import { useAuth } from "../hooks/useAuth";
-import css from "./AppBar/AppBar.module.css";
+import { Suspense } from 'react';
+import { AppBar } from './AppBar/AppBar';
 
-export const AppBar = () => {
-  const { isLoggedIn } = useAuth();
+const styles ={
+    maxWidth: '900px',
+    margin: '0 auto', 
+    padding: '0 16px',
+   
+}
 
-  return (
-    <header className={css.header}>
-      <Navigation />
-      {isLoggedIn ? <UserMenu /> : <AuthNav />}
-    </header>
-  );
+export const Layout = ({children}) => {
+    return (
+        <div style={styles}>
+            <AppBar />
+            <Suspense fallback={null}>
+                {children}
+            </Suspense>
+        </div>
+    );
 };
