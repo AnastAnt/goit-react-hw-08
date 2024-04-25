@@ -1,4 +1,5 @@
 import Modal from "react-modal";
+import PropTypes from "prop-types";
 
 import css from "./ModalDelete.module.css";
 
@@ -50,3 +51,11 @@ export const ModalDelete = ({ isOpen, onRequestClose, onDelete }) => {
     </Modal>
   );
 };
+
+ModalDelete.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onRequestClose: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
+
+export default ModalDelete;
