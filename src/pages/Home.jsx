@@ -8,7 +8,7 @@ const Home = () => {
       <DocumentTitle>Home</DocumentTitle>
       <div className={css.container}>
         <img
-          src="https://media.tenor.com/AvHPuvcRU4wAAAAj/cute-penguin.gif"
+          src="https://media.tenor.com/nZJmmGvsUq8AAAAi/sumikko-gurashi.gif"
           alt="Phone gif"
           className={css.gif}
         />
